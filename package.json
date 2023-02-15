@@ -1,6 +1,6 @@
 {
   "name": "sejun-deploy-test-3",
-  "version": "0.0.17",
+  "version": "0.0.18",
   "private": false,
   "main": "dist",
   "dependencies": {
@@ -14,7 +14,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "publish-npm": "rm -rf dist && mkdir dist && babel src -d dist --copy-files"
+    "prepare": "rm -rf dist && mkdir dist && tsc"
   },
   "eslintConfig": {
     "extends": [
@@ -36,6 +36,9 @@
   },
   "devDependencies": {
     "@babel/cli": "^7.20.7",
-    "@babel/preset-react": "^7.18.6"
+    "@babel/preset-react": "^7.18.6",
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "typescript": "^4.9.5"
   }
 }

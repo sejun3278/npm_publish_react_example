@@ -1,5 +1,3 @@
 export default function TextComponent() {
-    return(
-        <p>Text</p>
-    )
+  return <p>Text</p>;
 }
